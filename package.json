@@ -8,12 +8,20 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^2.1.6",
+    "@aws-amplify/core": "^2.2.5",
     "@react-native-community/masked-view": "0.1.5",
+    "@react-native-community/netinfo": "4.6.0",
     "@react-navigation/bottom-tabs": "^5.1.1",
     "@react-navigation/core": "^5.2.1",
     "@react-navigation/native": "^5.0.9",
     "@react-navigation/stack": "^5.1.1",
+    "aws-amplify": "^2.2.6",
     "expo": "~36.0.0",
+    "expo-facebook": "~8.0.0",
+    "expo-font": "~8.0.0",
+    "expo-google-app-auth": "^8.0.1",
+    "native-base": "@2.13.8",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
@@ -24,8 +32,8 @@
     "react-native-web": "~0.11.7"
   },
   "devDependencies": {
-    "babel-preset-expo": "~8.0.0",
-    "@babel/core": "^7.0.0"
+    "@babel/core": "^7.0.0",
+    "babel-preset-expo": "~8.0.0"
   },
   "private": true
 }

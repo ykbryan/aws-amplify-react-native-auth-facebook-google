@@ -1,14 +1,10 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "react-native-navigation-starter-app",
+    "name": "AWS Amplify Auth App",
+    "slug": "react-native-google-auth",
     "privacy": "public",
     "sdkVersion": "36.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,11 +16,13 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bryanchua.amplifyauth"
+    },
+    "android": {
+      "package": "com.bryanchua.amplifyauth"
     }
   }
 }
