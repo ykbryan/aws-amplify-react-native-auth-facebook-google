@@ -28,5 +28,5 @@ amplifyconfiguration.json
 amplify-gradle-config.json
 amplifyxc.config
 
-.env
+secrets.js
 yarn-error.log
