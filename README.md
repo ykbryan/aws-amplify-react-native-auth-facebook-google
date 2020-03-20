@@ -249,6 +249,22 @@ This is going to be used by Amazon Cognito and later, we are going to use Amplif
 
 ## Update Amplify Auth to include Google
 
+```
+amplify update auth
+```
+
+Use your keyboard arrow keys and move to **Update OAuth social providers**
+
+Use your keyboard arrow key again, go to **Google**, press **SPACEBAR** to select it and now press **Enter**
+
+![Add Google Login via Amplify CLI](./docs/google/amplify-add-google.png 'Add Google Login via Amplify CLI')
+
+Once that is done, do the following command to push the changes to your AWS environment, specifically this is for Amazon Cognito.
+
+```
+amplify push
+```
+
 ## Add IAM Identity Provider
 
 Since the mobile is going to use its respective Client ID to authenticate at Google API and Amazon Cognito is going to use a different Client ID for web application, we are going to enable IAM provider for account.google.com to recognise and use iOS and Android Client IDs too.
@@ -294,6 +310,12 @@ Select the **OpenID** tab and select **accounts.google.com**
 Scroll all the way down and click `Save Changes` to complete the Cognito configuration
 
 ## Launch and test your app
+
+Before you launch the app, go to `secrets.js.sample` and update the **credentials** with the respective google client IDs and Facebook App ID. Once that is done, rename it to `secrets.js` or enter the following command
+
+```
+mv secrets.js.sample secrets.js
+```
 
 Once all of the above have been configured, you can now launch the app and test both Facebook & Google Login. After that, go back to your Cognito and now, you should be able to see that you have users in both Google and Facebook Login.
 
